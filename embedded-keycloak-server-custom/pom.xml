@@ -40,6 +40,7 @@
     </dependencies>
 
     <build>
+        <finalName>embedded-keycloak-server-custom</finalName>
         <resources>
             <resource>
                 <filtering>true</filtering>
@@ -74,6 +75,7 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <executable>true</executable>
                     <excludeDevtools>true</excludeDevtools>
                     <requiresUnpack>
                         <dependency>
