@@ -1,0 +1,10 @@
+[Unit]
+Description=embedded-keycloak-server-custom
+After=syslog.target gamedoora-config-server.service
+
+[Service]
+User=gamedoora
+ExecStart=/opt/gamedoora/embedded-keycloak-server-custom.jar
+SuccessExitStatus=143
+[Install]
+WantedBy=multi-user.target
